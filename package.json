@@ -1,0 +1,15 @@
+{
+  "name": "wasm-project",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Project with examples of using wasm",
+  "scripts": {
+    "add": "http-server -o ./add/index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^0.12.3"
+  }
+}
