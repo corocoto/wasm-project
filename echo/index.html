@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    async function run () {
+        try {
+            const response = await fetch('echo.wasm');
+            const buffer = await response.arrayBuffer();
+
+            const imports = {
+                env: {
+                    // creates external function for wasm file
+                    printNumber: (arg) => {
+                        console.log(arg);
+                    }
+                }
+            };
+
+            const wasm = await WebAssembly.instantiate(buffer, imports);
+            wasm.instance.exports.echo(2021);
+        } catch (e) {
+            console.error(e);
+        }
+    }
+
+    run();
+</script>
+</body>
+</html>
