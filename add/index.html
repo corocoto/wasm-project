@@ -5,7 +5,7 @@
         try {
             const response = await fetch("add.wasm");
             const buffer = await response.arrayBuffer(); // need to document this
-            let wasm = await WebAssembly.instantiate(buffer);
+            const wasm = await WebAssembly.instantiate(buffer);
             console.log(wasm.instance.exports.addInt32(1,2));
             console.log(wasm.instance.exports.addInt64(1n,2n)); //need to set BigInt types as arguments
             console.log(wasm.instance.exports.addFloat32(1.1,2.1));
