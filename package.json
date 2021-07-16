@@ -4,7 +4,8 @@
   "version": "1.0.0",
   "description": "Project with examples of using wasm",
   "scripts": {
-    "add": "http-server -o ./add/index.html"
+    "add-browser-env": "http-server -o ./add/index.html",
+    "add-node-env": "node add/add.js"
   },
   "keywords": [],
   "author": "",
