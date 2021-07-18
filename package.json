@@ -7,7 +7,8 @@
     "add-browser-env": "http-server -o ./add/index.html",
     "add-node-env": "node add/add.js",
     "echo-node-env": "node echo/echo.js",
-    "counter-node-env": "node counter/counter.js"
+    "counter-node-env": "node counter/counter.js",
+    "sum-node-env": "node sum/sum.js"
   },
   "keywords": [],
   "author": "",
