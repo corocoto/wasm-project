@@ -4,14 +4,15 @@
   "version": "1.0.0",
   "description": "Project with examples of using wasm",
   "scripts": {
-    "add-browser-env": "http-server -o ./add/index.html",
-    "add-node-env": "node add/add.js",
-    "echo-node-env": "node echo/echo.js",
-    "counter-node-env": "node counter/counter.js",
-    "sum-node-env": "node sum/sum.js",
-    "reverse-node-env": "node reverse/reverse.js",
-    "reverse-shared-memory-buffer-node-env": "node reverse/shared-memory-buffer.js",
-    "offset-node-env": "node offset/offset.js"
+    "add-browser-env": "http-server -o instantiation/add/index.html",
+    "add-node-env": "node instantiation/add/add.js",
+    "echo-node-env": "node callbacks/echo/echo.js",
+    "auto-description-node-env": "node auto_description/echo/echo.js",
+    "counter-node-env": "node global_variables/counter/counter.js",
+    "sum-node-env": "node memory_buffer/allocation/sum/sum.js",
+    "reverse-node-env": "node memory_buffer/strings/reverse/reverse.js",
+    "reverse-shared-memory-buffer-node-env": "node memory_buffer/shared_memory_buffer/strings/reverse/reverse.js",
+    "offset-node-env": "node memory_buffer/static_memory_buffer/offset/offset.js"
   },
   "keywords": [],
   "author": "",
