@@ -8,7 +8,8 @@
     "add-node-env": "node add/add.js",
     "echo-node-env": "node echo/echo.js",
     "counter-node-env": "node counter/counter.js",
-    "sum-node-env": "node sum/sum.js"
+    "sum-node-env": "node sum/sum.js",
+    "reverse-node-env": "node reverse/reverse.js"
   },
   "keywords": [],
   "author": "",
