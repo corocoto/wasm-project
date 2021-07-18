@@ -1,4 +1,5 @@
 const fs = require('fs');
+const bytecode = fs.readFileSync(`${__dirname}/counter.wasm`);
 
 async function run() {
     try {
@@ -8,12 +9,12 @@ async function run() {
             mutable: true
         }, 0);
 
-        const bytecode = fs.readFileSync(`${__dirname}/counter.wasm`);
         const imports = {
             env: {
                 counter
             }
         };
+
         const wasm = await WebAssembly.instantiate(bytecode, imports);
         wasm.instance.exports.inc();
         wasm.instance.exports.inc();

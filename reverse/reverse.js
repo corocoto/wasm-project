@@ -1,4 +1,5 @@
 const fs = require('fs');
+const bytecode = fs.readFileSync(`${__dirname}/reverse.wasm`);
 
 const greeting = 'Hello world!';
 const memory = new WebAssembly.Memory({
@@ -12,7 +13,6 @@ run();
 
 async function run() {
     try {
-        const bytecode = fs.readFileSync(`${__dirname}/reverse.wasm`);
         const imports = {
             env: {
                 mem: memory

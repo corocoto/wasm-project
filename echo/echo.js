@@ -1,8 +1,8 @@
 const fs = require('fs');
+const bytecode = fs.readFileSync(`${__dirname}/echo.wasm`);
 
 async function run () {
     try {
-        const bytecode = fs.readFileSync(`${__dirname}/echo.wasm`);
         const imports = {
             env: {
                 // creates external function for wasm file

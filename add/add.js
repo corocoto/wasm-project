@@ -1,8 +1,8 @@
 const fs = require('fs');
+const bytecode = fs.readFileSync(`${__dirname}/add.wasm`);
 
 async function run () {
     try {
-        const bytecode = fs.readFileSync(`${__dirname}/add.wasm`);
         const wasm = await WebAssembly.instantiate(bytecode);
         console.log(wasm.instance.exports.addInt32(1,2));
         // console.log(wasm.instance.exports.addInt64(1,2));
