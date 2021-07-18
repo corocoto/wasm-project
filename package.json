@@ -13,7 +13,8 @@
     "reverse-node-env": "node memory_buffer/strings/reverse/reverse.js",
     "reverse-shared-memory-buffer-node-env": "node memory_buffer/shared_memory_buffer/strings/reverse/reverse.js",
     "offset-node-env": "node memory_buffer/static_memory_buffer/offset/offset.js",
-    "memory-allocator-node-env":"node memory_buffer/dynamic_memory_buffer/dynamic_memory_buffer.js"
+    "memory-allocator-node-env":"node memory_buffer/dynamic_memory_buffer/dynamic_memory_buffer.js",
+    "game-node-env": "node table/game/game.js"
   },
   "keywords": [],
   "author": "",
