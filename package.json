@@ -9,7 +9,8 @@
     "echo-node-env": "node echo/echo.js",
     "counter-node-env": "node counter/counter.js",
     "sum-node-env": "node sum/sum.js",
-    "reverse-node-env": "node reverse/reverse.js"
+    "reverse-node-env": "node reverse/reverse.js",
+    "reverse-shared-memory-buffer-node-env": "node reverse/shared-memory-buffer.js"
   },
   "keywords": [],
   "author": "",
